@@ -10,15 +10,72 @@
 <body>
     <nav class="navegacao" >
         <ul class="menu" >
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#inicio" class="menu-link">Inicio</a></li>
+            <li><a href="#sobre" class="menu-link">Sobre</a></li>
+            <li><a href="#projetos" class="menu-link">Projetos</a></li>
+            <li><a href="#contato" class="menu-link">Contato</a></li>
         </ul>
     </nav>
 
-    <main>
-        
+    <main id="inicio" class="cabecalho" >
+        <div>
+            <img src="img/foto perfil.jpg" alt="FotoPerfil" class="foto-perfil">
+            <h1>Lucas Vecchi</h1>
+            <p>Desenvolvedor Front End</p>
+        </div>
     </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Olá! Sou um estudante de Ciência da Computação apaixonado por tecnologia.
+                Ao longo da minha jornada, tenho me dedicado a adquirir conhecimentos através de estudos e projetos pessoais.
+                Além disso, estou sempre em busca de novos desafios para aprimorar as habilidades que possuo em algumas ferramentas e linguagens de programação
+                tanto Back End quanto Front End, o que me permite ter uma visão abrangente do desenvolvimento de software e outras tecnologias.
+            </p>
+        </div>
+    </section>
+
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="img/climaa.png" alt="Projeto-Clima" class="projetos-imagem">
+                <h3 class="info-projetos">Clima em Tempo real</h3>
+                <p class="paragrafo-projetos">Website para visualização de temperatura de qualquer cidade do mundo em tempo real.</p>
+            </div>
+
+            <div class="projetos-card">
+                <img src="img/quizz.png" alt="Projeto-Quiz" class="projetos-imagem">
+                <h3 class="info-projetos">Quiz</h3>
+                <p class="paragrafo-projetos">Um Quiz responsivo e interativo conforme voce avança ou retorna para alguma questão.</p>
+            </div>
+
+            <div class="projetos-card">
+                <img src="img/vecstoree.png" alt="Projeto-VecStore" class="projetos-imagem">
+                <h3 class="info-projetos">VecStore</h3>
+                <p class="paragrafo-projetos">A VesStore possue um  design responsivo e funções relacionadas a uma loja online.
+                 Nela você pode filtrar os produtos de sua escolha e adicioná-los a um carrinho de compra.      
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Contatos</h2>
+        <div class="contatos-caixa">
+            <form class="formulario-contato" id="formulario">
+                <div class="nome-form">
+                    <input placeholder="Nome" class="campo-form">
+                </div>
+                <div class="grupo-form">
+                    <textarea class="text-form" placeholder="Digite sua mensagem"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
 </body>
 </html>
