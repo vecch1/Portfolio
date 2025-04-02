@@ -16,4 +16,15 @@ function enviarWhatsapp(event){
 }
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const projetosCards = document.querySelectorAll('.projetos-card');
 
+    projetosCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const link = this.dataset.link;
+            if (link) {
+                window.open(link, '_blank');
+            }
+        });
+    });
+});
